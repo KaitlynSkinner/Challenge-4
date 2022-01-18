@@ -13,6 +13,7 @@ header {
 header h3 {
     position: inline-bock;
     float: right;
+    font-size: 30px;
 }
 
 section {
@@ -22,24 +23,47 @@ section {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
+    font-size: 20px;;
 }
 
-.quiz-qa h2{
-    align-items: center;
-
+.section-style {
+    color: black;
 }
 
-.quiz-qa p {
-    align-items: center;
-}
-
-.quiz-qa button {
+.start-test {
     padding: 5px 10px;
     font-size: 15px;
     background-color: purple;
     color: white;
     border-radius: 25%;
 }
- .quiz-qa button:hover {
+
+ .start-test:hover {
+    opacity: 0.5;
+ }
+
+ .view-highscores {
+    font-size: 25px;
+    border: none;
+    border-style: none;
+    background-color: white;
+ }
+
+ .view-highscores:hover {
+     opacity: 0.5;
+ }
+    
+
+ /* Need to make this javascript instead
+ .options {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+    border-radius: 25%;
+ }
+
+ .options:hover {
     background-color: plum;
  }
+ */

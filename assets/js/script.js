@@ -1,6 +1,7 @@
 // Setup localStorage for highscores and initials they will put in
 var highScores = document.querySelector("#highscores");
 var currentScore = 0;
+var timeCounter = document.querySelector("#time-counter");
 var timeLeft = 10;
 var quizQuestions = document.querySelector("#quiz-qa");
 var question = document.querySelector("#question");
@@ -9,10 +10,27 @@ var option2 = document.querySelector("#option2");
 var option3 = document.querySelector("#option3");
 var option4 = document.querySelector("#option4");
 
-//quizQuestions.setInerval( {
-
 console.log(quizQuestions);
 
+// Timer
+var countdown = setInterval(function(timeLeft) {
+    console.log(timeLeft);
+
+    if (timeLeft > 10) {
+        timeCounter.textContent = timeLeft + ' minutes';
+        timeLeft--;
+    } else if (timeLeft === 1) {
+        timeCounter.textContent = timeLeft + ' seconds';
+    } else {
+        timeCounter.textContent = "";
+        clearInterval(countdown);
+    }
+
+    timeLeft.appendChild(timeCounter);
+
+}, 1000);
+
+// Begin the test
 var startQuiz = document.querySelector("#start-quiz");
     var currentQuestion = 0;
     console.log(startQuiz);
@@ -103,3 +121,5 @@ option4.addEventListener("click", function(event) {
     option3.innerText = quizOne[currentQuestion].option3;
     option4.innerText = quizOne[currentQuestion].option4;
 });
+
+//Timer
