@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    position: relative;
+}
+
+header h3 {
+    position: inline-bock;
+    float: right;
+}
+
+section {
+    width: 100%;
+    margin: 150px 35px 25px 35px;
+    position: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.quiz-qa h2{
+    align-items: center;
+
+}
+
+.quiz-qa p {
+    align-items: center;
+}
+
+.quiz-qa button {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+    border-radius: 25%;
+}
+ .quiz-qa button:hover {
+    background-color: plum;
+ }
