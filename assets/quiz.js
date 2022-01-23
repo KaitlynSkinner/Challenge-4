@@ -1,5 +1,5 @@
 // Quiz 1 - answer = 3. alerts
-var quizOne = [{ 
+var quizScript = [{ 
     question: "Commonly used data types DO NOT include:",
     option1: "1. strings",
     option2: "2. booleans",
@@ -7,7 +7,7 @@ var quizOne = [{
     option4: "4. numbers",
     answer: " 3. alerts"
 },
-// Quiz 2 - answer = 
+// Quiz 2 - answer = 2. curly brackets
 {
     question: "The condition in an if/else statement is enclosed with ____.",
     option1: "1. quotes",

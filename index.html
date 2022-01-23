@@ -11,10 +11,12 @@
     <!-- Header begins -->
     <header>
         <button class="view-highscores" id="highscores">View Highscores</button>
-        <h3 id=time-counter">Time:<span id="seconds"></span></h3>
+        <h3>Time:<span id="seconds"></span></h3>
     </header>
 
     <!-- Main Quiz Section -->
+
+    <!-- Start Quiz -->
     <section id="quiz-qa">
            <h2>Coding Quiz Challenge</h2>
             <p>Try to answer the following code-related questions within the time limit.
@@ -22,13 +24,37 @@
             </p>
             <button class="start-test" id="start-quiz">Start Quiz</button>
     </section>
-    <section class="section-style">
+
+    <!-- Quiz Questions and Answers -->
+    <section id="vis-hidden" class="section-style">
         <p id="question"></p>
         <button class="options" id="option1"></button>
         <button class="options" id="option2"></button>
         <button class="options" id="option3"></button>
         <button class="options" id="option4"></button>
+        <div id="correct-incorrect"></div>
     </section>
+
+    <!-- All Done! Page -->
+    <section id=vis-hidden-two class="highscores-section">
+        <h3>All done!</h3>
+        <p>Your final score is <span id="current-score"></span></p>
+        <form class="enter-initials">
+            <label>Enter initials:</label>
+            <input type="text" placeholder="Your Initials" id="initials" class="form-input"/>
+            <button id="submit-hs" class="hs-submit" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- View Highscores Page -->
+    <section id="vis-hidden-three">
+        <h4>Highscores</h4>
+        <button id="go-back" class="hs-submit" type="button">
+            <a href="https://kaitlynskinner.github.io/Challenge-4/">
+            Go Back</a></button>
+        <button id="clear-hs" class="hs-submit" type="submit">Clear Highscores</button>
+    </section>
+
     <script src="./assets/quiz.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>

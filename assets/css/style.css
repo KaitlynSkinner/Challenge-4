@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Header Section */
 header {
     width: 100%;
     top: 0;
@@ -16,6 +17,7 @@ header h3 {
     font-size: 30px;
 }
 
+/* Main Section */
 section {
     width: 100%;
     margin: 150px 35px 25px 35px;
@@ -23,13 +25,10 @@ section {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    font-size: 20px;;
+    font-size: 20px;
 }
 
-.section-style {
-    color: black;
-}
-
+/* Start Test Section */
 .start-test {
     padding: 5px 10px;
     font-size: 15px;
@@ -42,6 +41,36 @@ section {
     opacity: 0.5;
  }
 
+ #vis-hidden {
+    visibility: hidden;
+}
+
+.section-style p {
+    color: black;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+ .options {
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+    border-radius: 25%;
+ }
+
+ .options:hover {
+    opacity: 0.5;
+ }
+
+ .correct-incorrect {
+    margin-top: 15px;
+    font-size: 20px;
+    border-top: 3px solid;
+    border-color: gray;
+ }
+
+ /* Highscores Section*/
  .view-highscores {
     font-size: 25px;
     border: none;
@@ -52,10 +81,39 @@ section {
  .view-highscores:hover {
      opacity: 0.5;
  }
-    
 
- /* Need to make this javascript instead
- .options {
+ #vis-hidden-two {
+    visibility: hidden;
+}
+
+ .highscores-section {
+    width: 100%;
+    margin: 0px 100px 25px 150px;
+    position: center;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+ }
+
+ .highscores-section h3 {
+    margin-left: 350px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.highscores-section p{
+    margin-left: 350px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.highscores-section label {
+    margin-left: 350px;
+    font-size: 20px;
+}
+
+ .hs-submit {
     padding: 5px 10px;
     font-size: 15px;
     background-color: purple;
@@ -63,7 +121,10 @@ section {
     border-radius: 25%;
  }
 
- .options:hover {
-    background-color: plum;
+ .hs-submit:hover {
+     opacity: 0.5;
  }
- */
+
+ #vis-hidden-three {
+    visibility: hidden;
+}
