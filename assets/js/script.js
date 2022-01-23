@@ -137,7 +137,6 @@ option4.addEventListener("click", function(event) {
         currentScore = currentScore + 5;
         correctIncorrect.innerText = "Correct";
         correctIncorrect.setAttribute("class", "correct-incorrect");
-        return allDone;
     } else {
         timeLeft = timeLeft - 5;
         currentScore = currentScore -5;
@@ -157,28 +156,32 @@ option4.addEventListener("click", function(event) {
 
 // Highscores Page
 var highScores = document.querySelector("#highscores");
+yourInitials = document.querySelector("#initials");
+var submitHs = document.querySelector("#submit-hs");
+var yourInitials = document.querySelector("input[name='form-input']").value;
+window.localStorage.setItem('initials', JSON.stringify(yourInitials));
 
 highScores.addEventListener("click", function(event) {
     event.preventDefault();
 
-    var submitHs = document.getElementById("#submit-hs")
-
-    if (event.target.matches || submitHs) {
+    if (event.target.matches || submitHs.addEventListener("click")) {
         document.getElementById("quiz-qa").style.display = "none";
         document.getElementById("vis-hidden").style.display = "none";
         document.getElementById("vis-hidden-three").style.visibility = "visible";
+        localStorage.getItem(yourInitials);
         return;
     }
 });
-
+var allDoneEl = quizScript[26,27,28,29];
 // Completed the Test Page
 var allDone = function() {
     console.log(allDone);
     
-        if (quizScript[26, 27, 28, 29]) {
+        if (allDoneEl) {
             document.getElementById("quiz-qa").style.display = "none";
             document.getElementById("vis-hidden").style.display = "none";
             document.getElementById("vis-hidden-two").style.visibility = "visible";
+            localStorage.setItem(yourInitials);
             return;
         }
 };
