@@ -71,9 +71,6 @@ option1.addEventListener("click", function(event) {
     option2.innerText = quizScript[currentQuestion].option2;
     option3.innerText = quizScript[currentQuestion].option3;
     option4.innerText = quizScript[currentQuestion].option4;
-
-    //Css 
-    document.getElementsByTagName("button")[0].setAttribute("class", "start-test");
 });
 
 option2.addEventListener("click", function(event) {
@@ -168,28 +165,29 @@ highScores.addEventListener("click", function(event) {
     } 
 });
 
-// Completed the Test Page
-var allDone = function() {
+var clearHighscore = document.querySelector("#clear-hs");
 
+clearHighscore.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    if (event.target.matches) {
+        document.getElementById("submit-hs").remove;
+    }
+});
+
+// Completed the Test Page
+var allDone = document.querySelector("#completed-quiz");
+
+allDone.addEventListener("click", function() {
+    var allDoneEl = quizScript.charAt(25, 26, 27, 28);
+
+    if(allDoneEl == 'clicked') {
+        document.getElementById("quiz-qa").style.display = "none",
+        document.getElementById("vis-hidden").style.display = "none",
+        document.getElementById("vis-hidden-two").style.visibility = "visible";
+      }
+});
 //var submitHs = document.querySelector("#submit-hs");
 // Setup localStorage for highscores and initials they will put in
 //var yourInitials = document.querySelector("input[name='form-input']").value;
 //window.localStorage.setItem('initials', JSON.stringify(yourInitials));
-if(quizScript.charAt(25) == 'clicked') {
-    document.getElementById("quiz-qa").style.display = "none",
-    document.getElementById("vis-hidden").style.display = "none",
-    document.getElementById("vis-hidden-two").style.visibility = "visible";
-  }else if(quizScript.charAt(26) == 'clicked') {
-    document.getElementById("quiz-qa").style.display = "none",
-    document.getElementById("vis-hidden").style.display = "none",
-    document.getElementById("vis-hidden-two").style.visibility = "visible";
-  }else if(quizScript.charAt(27) == 'clicked') {
-    document.getElementById("quiz-qa").style.display = "none",
-    document.getElementById("vis-hidden").style.display = "none",
-    document.getElementById("vis-hidden-two").style.visibility = "visible";
-  }else if(quizScript.charAt(28) == 'clicked') {
-    document.getElementById("quiz-qa").style.display = "none",
-    document.getElementById("vis-hidden").style.display = "none",
-    document.getElementById("vis-hidden-two").style.visibility = "visible";
-  }
-};
