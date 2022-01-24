@@ -1,4 +1,3 @@
-// Setup localStorage for highscores and initials they will put in
 var secondsEl = document.querySelector("#seconds");
 var quizQuestions = document.querySelector("#quiz-qa");
 var visHidden = document.querySelector("#vis-hidden");
@@ -8,7 +7,6 @@ var option1 = document.querySelector("#option1");
 var option2 = document.querySelector("#option2");
 var option3 = document.querySelector("#option3");
 var option4 = document.querySelector("#option4");
-
 
 // Timer function 
 var showTime = function() {
@@ -157,31 +155,41 @@ option4.addEventListener("click", function(event) {
 // Highscores Page
 var highScores = document.querySelector("#highscores");
 yourInitials = document.querySelector("#initials");
-var submitHs = document.querySelector("#submit-hs");
-var yourInitials = document.querySelector("input[name='form-input']").value;
-window.localStorage.setItem('initials', JSON.stringify(yourInitials));
 
 highScores.addEventListener("click", function(event) {
     event.preventDefault();
-
+//
     if (event.target.matches || submitHs.addEventListener("click")) {
         document.getElementById("quiz-qa").style.display = "none";
         document.getElementById("vis-hidden").style.display = "none";
         document.getElementById("vis-hidden-three").style.visibility = "visible";
         localStorage.getItem(yourInitials);
         return;
-    }
+    } 
 });
-var allDoneEl = quizScript[26,27,28,29];
+
 // Completed the Test Page
 var allDone = function() {
-    console.log(allDone);
-    
-        if (allDoneEl) {
-            document.getElementById("quiz-qa").style.display = "none";
-            document.getElementById("vis-hidden").style.display = "none";
-            document.getElementById("vis-hidden-two").style.visibility = "visible";
-            localStorage.setItem(yourInitials);
-            return;
-        }
+
+//var submitHs = document.querySelector("#submit-hs");
+// Setup localStorage for highscores and initials they will put in
+//var yourInitials = document.querySelector("input[name='form-input']").value;
+//window.localStorage.setItem('initials', JSON.stringify(yourInitials));
+if(quizScript.charAt(25) == 'clicked') {
+    document.getElementById("quiz-qa").style.display = "none",
+    document.getElementById("vis-hidden").style.display = "none",
+    document.getElementById("vis-hidden-two").style.visibility = "visible";
+  }else if(quizScript.charAt(26) == 'clicked') {
+    document.getElementById("quiz-qa").style.display = "none",
+    document.getElementById("vis-hidden").style.display = "none",
+    document.getElementById("vis-hidden-two").style.visibility = "visible";
+  }else if(quizScript.charAt(27) == 'clicked') {
+    document.getElementById("quiz-qa").style.display = "none",
+    document.getElementById("vis-hidden").style.display = "none",
+    document.getElementById("vis-hidden-two").style.visibility = "visible";
+  }else if(quizScript.charAt(28) == 'clicked') {
+    document.getElementById("quiz-qa").style.display = "none",
+    document.getElementById("vis-hidden").style.display = "none",
+    document.getElementById("vis-hidden-two").style.visibility = "visible";
+  }
 };
