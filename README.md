@@ -22,4 +22,17 @@ Password Generator - Deployed URL = https://kaitlynskinner.github.io/Challenge-4
 
 Git Hub - Repository URL = https://github.com/KaitlynSkinner/Challenge-4.git
 
-![Deployed Application](?raw=true)
+![Deployed Application]
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup.png?raw=true)
+
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup-Question1.png?raw=true)
+
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup-Question2.png?raw=true)
+
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup-Question3.png?raw=true)
+
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup-Question4.png?raw=true)
+
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup-Question5.png?raw=true)
+
+(https://github.com/KaitlynSkinner/Challenge-4/blob/aff17dbe94713a77c6a4d500a472dfbc53b93b61/assets/images/Challenge-4-Mockup-Highscores.png?raw=true)
